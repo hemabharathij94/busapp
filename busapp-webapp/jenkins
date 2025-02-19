@@ -46,9 +46,9 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 dir('busapp-webapp'){  // Ensure 'npm install' runs inside 'busapp-webapp'
-                sh 'npm install'
+                    sh 'npm install'
+                }
             }
-        }
         }
 
         stage('Docker Build & Push') {
