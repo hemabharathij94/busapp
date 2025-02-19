@@ -45,6 +45,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
+                dir('busapp-webapp')
                 sh 'npm install'
             }
         }
